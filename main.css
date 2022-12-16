@@ -1,0 +1,71 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    padding-left: 25px;
+}
+
+.navbar{
+    background-color: rgb(223, 231, 238);
+    padding: 5px;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07), 0px 3px 7px -1px rgb(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-brand{
+    padding-left: 20px;
+    color: initial;
+}
+
+
+#output{
+    margin-top: 20px;
+    font-size: 24px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 0;
+}
+
+#calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    grid-gap: 20px;
+    max-width: 270px;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#calculator button{
+    border: 4px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+#calculator button:active{
+    background-color: rgb(20, 158, 158);
+    color: white;
+}
+
+.zero {
+    grid-column: 1 / span 2;
+}
+
+.operation, .equal {
+    font-weight: 500;
+    font-size: 20px;
+}
+
